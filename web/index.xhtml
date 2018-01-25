@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Онлайн Банкомат</title>
+        <h:outputStylesheet library="css" name="p.css"/>
+    </h:head>
+    <h:body>
+        <div class="login_div">
+            <p class="title">Введите логин и пароль</p>
+            <h:form styleClass="login_form">
+                <p>Логин: <h:inputText id="username" value="#{user.username}" required="true"/></p>
+                <p>Пароль: <h:inputSecret id="password" value="#{user.password}" redisplay="true" required="true"/></p>
+                <p><h:commandButton action="pages/page1" value="Войти"  /></p>
+                
+            </h:form>
+            <div class="footer">
+                <p>Pirozhkov 2017</p>
+            </div>
+        </div>
+    </h:body>
+</html>
+

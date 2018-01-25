@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>page1</title>
+        <h:outputStylesheet library="css" name="p.css"/>
+    </h:head>
+    <h:body>
+        <h2><span style="color: greenyellow">Login: #{user.username} </span></h2>
+        <p><span style="color: greenyellow">Password: #{user.password} </span>вывод пароля для тестирования</p>
+        <h3>Ваш баланс:  #{controller.balance} </h3>
+        <h3>Ваш кредитный лимит:  #{controller.limit} </h3>
+        <h3>Ваш номер карты:  #{controller.cartId}</h3>
+        <h:button outcome="page2" value="Переслать бабло"/>
+        #{transfer.setSend(0)}
+    </h:body>
+</html>
+
